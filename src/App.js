@@ -58,19 +58,8 @@ function App() {
 
   //toggle button
   const toggleSaleItems = () => {
-    setShowSaleItems((prevState) => !prevState);
+    setShowSaleItems(() => !showSaleItems);
   };
-
-  /*
-  prevState is a callback function parameter, represents current value of showSaleItems state.
-
-  • function toggleSaleItems toggles value of showSaleItems between true and false.
-	• arrow function prevState => !prevState ensures that new state is always opposite of current state, enabling toggling behavior.
-  
-  •	!prevState used to toggle state:
-  •	If prevState is true, !prevState evaluates to false.
-  •	If prevState is false, !prevState evaluates to true.
-  */
 
   return (
     <div className="container">
